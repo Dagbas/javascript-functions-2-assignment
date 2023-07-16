@@ -64,4 +64,26 @@ const books = [
   },
 ];
 
+function filterByGenre () {
+  return { scienceFictionGenre , mysteryGenre ,romanceGenre };
+}
+
+let mysteryGenre = books.filter (
+  function(novel) {
+    return novel.genre === "mystery"
+});
+
+let romanceGenre = books.filter 
+(function(novel) { 
+    return novel.genre === "romance"
+  });
+
+let scienceFictionGenre = books.filter
+(function(novel) {
+  return novel.genre === "sci-fi"
+});
+
+
+
+
 
